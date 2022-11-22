@@ -6,32 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".menu">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:onClick="menu"
+        android:text="↩"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Txt_nombre"
+        android:layout_width="283dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="180dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/Txt_nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="131dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="140dp"
-        android:onClick="almacen"
-        android:text="almacen"
+    <EditText
+        android:id="@+id/Txt_codigo"
+        android:layout_width="275dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="108dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/Txt_codigo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="130dp"
-        android:layout_height="51dp"
-        android:onClick="tutorial"
-        android:text="Button"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="410dp" />
+        android:id="@+id/button"
+        android:layout_width="282dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="336dp"
+        android:onClick="registrar"
+        android:text="@string/Button_registrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Txt_descripcion"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="252dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/Txt_descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_buscar"
+        android:layout_width="287dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="408dp"
+        android:text="@string/Button_buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="buscar" />
+
+    <Button
+        android:id="@+id/Button_modificar"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="492dp"
+        android:onClick="modificar"
+        android:text="@string/Button_modificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_eliminar"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="572dp"
+        android:onClick="eliminar"
+        android:text="@string/Button_eliminar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,13 @@
 package com.example.almacen;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class tutorial extends AppCompatActivity {
     VideoView video;
@@ -22,8 +22,9 @@ public class tutorial extends AppCompatActivity {
         video.setMediaController(controlador);
         video.start();
     }
+
     public void menu(View view) {
-        Intent intent = new Intent(this, menu.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

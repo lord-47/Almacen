@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".tutorial">
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:onClick="menu"
+        android:text="↩"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="297dp"
@@ -15,15 +27,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="108dp"
-        android:onClick="menu"
-        android:text="volver al menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
