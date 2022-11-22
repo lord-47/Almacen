@@ -13,13 +13,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        startService(new Intent(this, MyService.class));
+        startService(new Intent(this, MyService3.class));
     }
 
     public void tutorial(View view) {
         mp = MediaPlayer.create(this, R.raw.rocas);
         mp.start();
-        Intent intent = new Intent(this, tutorial.class);
+        Intent intent = new Intent(this, tutorial2.class);
         startActivity(intent);
     }
     public void almacen(View view) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void ajustes(View view) {
         mp = MediaPlayer.create(this, R.raw.rocas);
         mp.start();
-        Intent intent = new Intent(this, menuSonido.class);
+        Intent intent = new Intent(this, menuSonido2.class);
         startActivity(intent);
     }
 }
