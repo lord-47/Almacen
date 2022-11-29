@@ -25,7 +25,7 @@ public class menu extends AppCompatActivity {
         et_descipcion = (EditText) findViewById(R.id.Txt_descripcion);
     }
     public void registrar(View view) {
-        mp = MediaPlayer.create(this, R.raw.rocas);
+        mp = MediaPlayer.create(this, R.raw.boton);
         mp.start();
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"miBBDD",null,1);
         SQLiteDatabase Bdb =admin.getWritableDatabase();
@@ -52,7 +52,7 @@ public class menu extends AppCompatActivity {
         }
     }
     public void buscar(View view) {
-        mp = MediaPlayer.create(this, R.raw.rocas);
+        mp = MediaPlayer.create(this, R.raw.boton);
         mp.start();
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"miBBDD",null,1);
         SQLiteDatabase Bdb =admin.getWritableDatabase();
@@ -78,7 +78,7 @@ public class menu extends AppCompatActivity {
 
 
     public void modificar(View view) {
-        mp = MediaPlayer.create(this, R.raw.rocas);
+        mp = MediaPlayer.create(this, R.raw.boton);
         mp.start();
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"miBBDD",null,1);
         SQLiteDatabase Bdb =admin.getWritableDatabase();
@@ -110,7 +110,7 @@ public class menu extends AppCompatActivity {
     }
 
     public void eliminar(View view) {
-        mp = MediaPlayer.create(this, R.raw.rocas);
+        mp = MediaPlayer.create(this, R.raw.boton);
         mp.start();
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"miBBDD",null,1);
         SQLiteDatabase Bdb =admin.getWritableDatabase();

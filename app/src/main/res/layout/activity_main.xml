@@ -11,7 +11,7 @@
         android:layout_width="131dp"
         android:layout_height="48dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="412dp"
         android:onClick="almacen"
         android:text="almacen"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,8 @@
         android:id="@+id/button3"
         android:layout_width="130dp"
         android:layout_height="51dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="416dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="492dp"
         android:onClick="tutorial"
         android:text="tutorial"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,10 +32,20 @@
         android:id="@+id/button4"
         android:layout_width="127dp"
         android:layout_height="52dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="496dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="568dp"
         android:onClick="ajustes"
         android:text="ajustes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="226dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngegg" />
 </androidx.constraintlayout.widget.ConstraintLayout>
