@@ -49,4 +49,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_g2f4c981c3_1280" />
+
+    <Button
+        android:id="@+id/btnPlayChill"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:text="@string/Button_chill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483"
+        tools:text="@string/Button_chill" />
+
+    <Button
+        android:id="@+id/btnPlayLofi"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:text="@string/Button_lofi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayChill"
+        app:layout_constraintVertical_bias="0.09"
+        tools:text="@string/Button_lofi" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

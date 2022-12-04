@@ -7,4 +7,6 @@
     <string name="Button_buscar">Buscar</string>
     <string name="Button_eliminar">Eliminar</string>
     <string name="Button_modificar">Modificar</string>
+    <string name="Button_chill">Chill Music</string>
+    <string name="Button_lofi">Lofi Music</string>
 </resources>
