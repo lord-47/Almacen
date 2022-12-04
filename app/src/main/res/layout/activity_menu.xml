@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF5722"
+    android:backgroundTint="#5A2E2E"
     tools:context=".menu">
 
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="59dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="171dp"
+        android:layout_height="46dp"
         android:layout_marginTop="44dp"
         android:onClick="menu"
-        android:text="↩"
-        android:textSize="34sp"
+        android:text="Go Back"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,86 +25,100 @@
         android:id="@+id/Txt_nombre"
         android:layout_width="283dp"
         android:layout_height="54dp"
-        android:layout_marginTop="180dp"
         android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/Txt_nombre"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#A5A5A5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Txt_codigo" />
 
     <EditText
         android:id="@+id/Txt_codigo"
         android:layout_width="275dp"
         android:layout_height="52dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="16dp"
         android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
+        android:duplicateParentState="false"
+        android:editTextColor="#FFFFFF"
+        android:editable="false"
         android:ems="10"
         android:hint="@string/Txt_codigo"
         android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A5A5A5"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="282dp"
         android:layout_height="54dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="336dp"
+        android:layout_marginTop="40dp"
         android:onClick="registrar"
         android:text="@string/Button_registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Txt_descripcion" />
 
     <EditText
         android:id="@+id/Txt_descripcion"
         android:layout_width="282dp"
         android:layout_height="48dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="252dp"
         android:autofillHints=""
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/Txt_descripcion"
         android:inputType="textMultiLine"
+        android:textColorHint="#A5A5A5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Txt_nombre" />
 
     <Button
         android:id="@+id/Button_buscar"
         android:layout_width="287dp"
         android:layout_height="58dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginTop="20dp"
+        android:onClick="buscar"
         android:text="@string/Button_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="buscar" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/Button_modificar"
         android:layout_width="288dp"
         android:layout_height="58dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginTop="20dp"
         android:onClick="modificar"
         android:text="@string/Button_modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Button_buscar" />
 
     <Button
         android:id="@+id/Button_eliminar"
         android:layout_width="288dp"
         android:layout_height="58dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="572dp"
+        android:layout_marginTop="20dp"
         android:onClick="eliminar"
         android:text="@string/Button_eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Button_modificar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

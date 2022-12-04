@@ -2,9 +2,9 @@
     <string name="app_name">Almacen</string>
     <string name="Txt_codigo">Codigo</string>
     <string name="Txt_nombre">Nombre</string>
-    <string name="Txt_descripcion">descripcion</string>
-    <string name="Button_registrar">registrar</string>
-    <string name="Button_buscar">buscar</string>
-    <string name="Button_eliminar">eliminar</string>
-    <string name="Button_modificar">modificar</string>
+    <string name="Txt_descripcion">Descripcion</string>
+    <string name="Button_registrar">Registrar</string>
+    <string name="Button_buscar">Buscar</string>
+    <string name="Button_eliminar">Eliminar</string>
+    <string name="Button_modificar">Modificar</string>
 </resources>
