@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
+import java.util.Objects;
+
 public class menuSonido2 extends AppCompatActivity {
     Button btnPlayChill;
     Button btnPlayLofi;
@@ -27,6 +29,8 @@ public class menuSonido2 extends AppCompatActivity {
         btnPlayLofi=findViewById(R.id.btnPlayLofi);
         isPlayingChill = isMyServiceRunning(MyService3.class);
         isPlayingLofi = isMyServiceRunning(AlterService.class);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.pngegg);
 
         int volumenMaximo = gestorSonido.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         int volumenActual = gestorSonido.getStreamVolume(AudioManager.STREAM_MUSIC);

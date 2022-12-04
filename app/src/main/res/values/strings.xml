@@ -9,4 +9,12 @@
     <string name="Button_modificar">Modificar</string>
     <string name="Button_chill">Chill Music</string>
     <string name="Button_lofi">Lofi Music</string>
+    <string name="go_back">Go back</string>
+    <string name="icono_de_musica">icono de musica</string>
+    <string name="go_back2">go back</string>
+    <string name="libros">libros</string>
+    <string name="ajustes">ajustes</string>
+    <string name="tutorial">tutorial</string>
+    <string name="almacen">almacen</string>
+    <string name="go_back3">Go Back</string>
 </resources>

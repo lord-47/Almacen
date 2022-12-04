@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Animation shakes = AnimationUtils.loadAnimation(this,R.anim.shake);
         image.startAnimation(shakes);
         Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.pngegg);
+        getSupportActionBar().setIcon(R.mipmap.pngegg);
         isPlayingChill = isMyServiceRunning(MyService3.class);
         isPlayingLofi = isMyServiceRunning(AlterService.class);
 
