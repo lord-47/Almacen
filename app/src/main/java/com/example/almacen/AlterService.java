@@ -23,7 +23,6 @@ public class AlterService extends Service {
         player.start();
         return START_STICKY;
     }
-
     @Override
     public void onDestroy() {
         super.onDestroy();
