@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 
 public class menu extends AppCompatActivity {
     private EditText et_nombre, et_codigo,et_descipcion;
@@ -23,6 +25,8 @@ public class menu extends AppCompatActivity {
         et_codigo = (EditText) findViewById(R.id.Txt_codigo);
         et_nombre = (EditText) findViewById(R.id.Txt_nombre);
         et_descipcion = (EditText) findViewById(R.id.Txt_descripcion);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.pngegg);
     }
     public void registrar(View view) {
         mp = MediaPlayer.create(this, R.raw.boton);

@@ -12,10 +12,10 @@
     <Button
         android:id="@+id/button6"
         android:layout_width="171dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:layout_marginTop="44dp"
         android:onClick="menu"
-        android:text="Go Back"
+        android:text="@string/go_back3"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import java.util.Objects;
+
 public class tutorial2 extends AppCompatActivity {
     VideoView video;
 
@@ -21,6 +23,8 @@ public class tutorial2 extends AppCompatActivity {
         MediaController controlador = new MediaController(this);
         video.setMediaController(controlador);
         video.start();
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.pngegg);
     }
 
     public void menu(View view) {

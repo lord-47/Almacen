@@ -16,7 +16,10 @@
             android:name=".MyService3"
             android:enabled="true"
             android:exported="true"></service>
-
+        <service
+            android:name=".AlterService"
+            android:enabled="true"
+            android:exported="true"></service>
         <activity
             android:name=".menuSonido2"
             android:exported="false">
